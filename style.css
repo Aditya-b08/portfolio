@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0e0e0e;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: #111;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 600;
+}
+.logo span {
+    color: #00eaff;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+nav ul li a:hover {
+    color: #00eaff;
+}
+
+/* HERO SECTION */
+
+
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: linear-gradient(to right, #000, #111);
+}
+
+.hero-left {
+    max-width: 60%;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero-right {
+    flex-shrink: 0;
+}
+/* SECTIONS */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #00eaff;
+}
+
+.skills .skill-box,
+.projects .project-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.certs ul li {
+    font-size: 18px;
+    padding: 5px 0;
+    opacity: 0.9;
+}
+
+/* CONTACT */
+.contact p a {
+    color: #00eaff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+}
+/* PROFILE PHOTO */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00eaff;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 1.2s ease-in-out;
+}
+.github-icon {
+    width: 28px;
+    margin-left: 10px;
+    filter: invert(1);
+}
+/* HOBBIES SECTION */
+.hobbies {
+    margin-top: 40px;
+}
+
+.hobby-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 45%;
+    min-width: 250px;
+    border-radius: 10px;
+    border: 1px solid #00eaff33;
+    transition: 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    border-color: #00eaff;
+}
+
+.hobby-card h3 {
+    margin-bottom: 10px;
+    color: #00eaff;
+}
+
+.hobby-card p {
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
